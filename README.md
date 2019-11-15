@@ -51,9 +51,9 @@ To include the plugin, just use leaflet-windbarb.js from the src folder:
 Generates a wind barb / wind arrow icon with the following options:
 
     pointRadius - Radius of point in the middle; Default = 8
-	strokeColorCircle - The circle stroke line color; Default: #010101
-	strokeColorPath - The Path of the stroke line color; Default: #000000
-	flagFillColor - The Flag Color; Default: #000000
+    strokeColorCircle - The circle stroke line color; Default: #010101
+    strokeColorPath - The Path of the stroke line color; Default: #000000
+    flagFillColor - The Flag Color; Default: #000000
     strokeWidth - Stroke width; Default = 2
     strokeLength - Length of the main stroke, to which the barbs are connected; Default = 15
     barbSpaceing - Spacing between the barbs; Default = 5
@@ -62,6 +62,9 @@ Generates a wind barb / wind arrow icon with the following options:
     fillColor - Set the fill colour of the circle - Default = #2B85C7 (Thanks  Rickyars (https://github.com/rickyars))
     mirrorVel - mirrors velocity indication; default = false        
 #### Changelog
+0.0.7 - November, 2019
+	
+	Add package.json to be able to retrive this plugin with npm
 0.0.6 - February, 2019
 	
 	Add change stroke and flag color ability into the script
