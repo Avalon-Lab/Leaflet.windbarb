@@ -1,0 +1,24 @@
+{
+  "name": "leaflet.windbarb",
+  "version": "0.0.7",
+  "description": "A Leaflet plugin to create wind arrows with direction and velocity (wind barbs). Original source code : JoranBeaufort/Leaflet.windbarb",
+  "main": "src/leaflet-windbarb.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Avalon-Lab/Leaflet.windbarb.git"
+  },
+  "keywords": [
+    "Leaflet",
+    "plugin",
+    "visualization",
+    "wind",
+    "windbarb"
+  ],
+  "author": "Manuel Baer @JoranBeaufort",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Avalon-Lab/Leaflet.windbarb/issues"
+  },
+  "homepage": "https://github.com/Avalon-Lab/Leaflet.windbarb"
+}
