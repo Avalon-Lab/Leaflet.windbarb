@@ -60,11 +60,18 @@ Generates a wind barb / wind arrow icon with the following options:
     barbHeight - Height of 10kn adn 50kn barbs, 5kn barbs will be 50%; Default = 15
     forceDir - If set to "true" the direction will always be shown, even if speed < 2.5kn; Default = false
     fillColor - Set the fill colour of the circle - Default = #2B85C7 (Thanks  Rickyars (https://github.com/rickyars))
-    mirrorVel - mirrors velocity indication; default = false        
+    mirrorVel - mirrors velocity indication; default = false
+
 #### Changelog
+
+0.0.8 - November, 2019
+	
+	Transform IIFE to simple exported method to be able to use in WebComponent (like LitElement)
+
 0.0.7 - November, 2019
 	
 	Add package.json to be able to retrive this plugin with npm
+
 0.0.6 - February, 2019
 	
 	Add change stroke and flag color ability into the script

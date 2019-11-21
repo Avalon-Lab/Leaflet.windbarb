@@ -1,6 +1,6 @@
 {
   "name": "leaflet.windbarb",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A Leaflet plugin to create wind arrows with direction and velocity (wind barbs). Original source code : JoranBeaufort/Leaflet.windbarb",
   "main": "src/leaflet-windbarb.js",
   "scripts": {},

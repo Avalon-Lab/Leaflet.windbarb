@@ -4,22 +4,25 @@
  This plugin enables the automatic creation of 
  wind barb icons in Leaflet.
  ------
- version: 0.0.6
- Modified Date: 13-Feb-2019
- Modified by Rikimarutsui
- Log: Add change stroke and flag color ability into the script
+ version: 0.0.8
+ Modified Date: 21-Nov-2019
+ Modified by JeffLeFoll
+ Log: Transform IIFE to simple exported method to be able to use in WebComponent (like LitElement)
 */
 
-/*global L*/
 
-(function (window, document, undefined) {
+export default function(leaflet) {
     "use strict";
+    
+	if (leaflet == null) {
+		leaflet = window.L
+	}
 
-    L.WindBarb = {};
+    leaflet.WindBarb = {};
 
-    L.WindBarb.version = '0.0.1';
+    leaflet.WindBarb.version = '0.0.1';
 
-    L.WindBarb.Icon = L.Icon.extend({
+    leaflet.WindBarb.Icon = leaflet.Icon.extend({
         options: {
         	fillColor: '#2B85C7',
             pointRadius: 8,
@@ -34,7 +37,7 @@
         },
 
         initialize: function (options) {
-            options = L.Util.setOptions(this, options);
+            options = leaflet.Util.setOptions(this, options);
         },
 
         createIcon: function () {
@@ -269,7 +272,7 @@
         _setIconStyles: function (img, name, a) {
             var sw,r,o;
             var options = this.options,
-                size = L.point(options[name === 'shadow' ? 'shadowSize' : 'iconSize']),
+                size = leaflet.point(options[name === 'shadow' ? 'shadowSize' : 'iconSize']),
                 anchor;
                 
             sw = this.options.strokeWidth,
@@ -285,7 +288,7 @@
                 w = h = 2*sw+2*r;
                 var x = w/2;
                 var y = h/2;
-                anchor = L.point([x,y]);
+                anchor = leaflet.point([x,y]);
             }
 
             if (!anchor && size) {
@@ -331,8 +334,8 @@
       }
     });
         
-    L.WindBarb.icon = function (options) {
-        return new L.WindBarb.Icon(options);
+    leaflet.WindBarb.icon = function (options) {
+        return new leaflet.WindBarb.Icon(options);
     };
 
-}(this, document));
+};
