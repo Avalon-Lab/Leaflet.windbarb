@@ -14,18 +14,16 @@
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"> </script>
+    <script type="module" src="../src/leaflet-windbarb.js"> </script>
 </head>
 <body>
     <div id="map"></div>
 </body>
-    <script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"> </script>
-    <script src="../src/leaflet-windbarb.js"> </script>
-
     <script>
-    
-    var southWest = L.latLng(47.024354,7.069445),
-		northEast = L.latLng(47.146849, 7.249689),
-		bounds = L.latLngBounds(southWest, northEast);
+        var southWest = L.latLng(47.024354,7.069445),
+            northEast = L.latLng(47.146849, 7.249689),
+            bounds = L.latLngBounds(southWest, northEast);
 
         var map = L.map('map',{
             maxBounds: bounds,
@@ -43,7 +41,7 @@
         
         var meteoPoints = [
             [ 47.11285 , 7.222309, 5, 190], //Ipsach
-            [ 47.085272, 7.20377 , 30, 90], //Mörigen
+            [ 47.085272, 7.20377 , 30, 90], //Mï¿½rigen
             [ 47.092285, 7.156734, 47, 170], //Twann
             [ 47.13294 , 7.220936, 92, 45], //Vingelz
             [ 47.088311, 7.128925, 125 , 280], //Twannberg

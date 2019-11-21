@@ -44,7 +44,7 @@ var marker = L.marker([lat,long], {icon: icon}).addTo(map);
 
 To include the plugin, just use leaflet-windbarb.js from the src folder:
 
-```<script src="leaflet-windbarb.js"></script>```
+```<script type="module" src="leaflet-windbarb.js"></script>```
 
 #### Options
 
